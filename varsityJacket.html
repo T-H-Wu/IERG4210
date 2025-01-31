@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&display=swap" rel="stylesheet">
+        <title>Dummy Shopping Site</title>
+    </head>
+    <body>
+        <div class="menuBar">
+            <div class = topBar>
+            </div>
+            <ul class = "headerBox">
+                <li><a href="home.html"><b>Home</b></a></li>
+                
+                <!---Implement a drop down menu for the categories late when implementing JavaScript or jump to a page full of all categories-->
+                <li><a href="categories.html">Categories</a></li>
+                
+                <li><h1 class = "nameElement">Clothing Shop</h1></li>
+                <li><a href="about.html">About</a></li>
+                <li class = "shoppingList">Shopping List: $109.99
+                    <div class="shoppingListHoverElement">
+                        <div class="shoppingListTextElement">
+                            <h3 class="listTitle">Shopping List:</h3>
+                            <div class="scrollBox" id="checkout">
+                                <ul class="shoppingListList">
+                                    <li>
+                                        Leather Men's Shoes
+                                        <span class="properties">
+                                            quantity: 1<br>price: $49.99
+                                        </span>      
+                                    </li>
+                                    <li>
+                                        Test
+                                        <span class="properties">
+                                            quantity: 1<br>price: $20.00
+                                        </span>      
+                                    </li>
+                                    <li>
+                                        Test
+                                        <span class="properties">
+                                            quantity: 1<br>price: $20.00
+                                        </span>      
+                                    </li>
+                                    <li>
+                                        Test
+                                        <span class="properties">
+                                            quantity: 1<br>price: $20.00
+                                        </span>      
+                                    </li>
+                                    <li>
+                                        Total: $109.99
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="checkout">Checkout</button>
+                        </div>
+                    </div>
+                </li>
+                
+            </ul>
+    
+            <ul class = "categories">
+                <li><a href = "outer.html" class="current">Outer Wear</a></li>
+                <li><a href = "inner.html">Inner Wear</a></li>
+                <li><a href = "pants.html">Pants</a></li>
+                <li><a href = "shoes.html">Shoes</a></li>
+            </ul>
+        </div>
+
+        <div class="productFull" id="productPage">
+            
+            <article class = "itemCard">
+                <img src="img/jacket1.png" alt="Varsity Jacket">
+                <div class = "productText">
+                    <h6>Varsity Jacket</h6>
+                    <p>$54.99</p>
+                </div>
+            </article>
+            
+            
+            <article class = "description">
+                <h3>Varsity Jacket</h3>
+                <div class="scrollBox" id="product">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse purus mi, mollis ac facilisis in, facilisis quis nibh. Proin cursus, libero quis blandit gravida, mauris libero vehicula odio, ac vehicula mauris est non metus. Nulla dictum aliquet felis ac accumsan. Pellentesque velit tortor, finibus in finibus ut, bibendum at libero. Curabitur venenatis libero sit amet tempor laoreet. Aenean a lectus at lorem vehicula dignissim et at justo. Nam non auctor diam. Proin feugiat molestie mi, et ultrices erat convallis id. Phasellus porttitor ipsum at mi tempor, mollis tristique justo sodales. Ut lacinia ac lacus nec viverra.</p>
+                </div>
+            </article>
+            
+            <h3>price: $54.99</h3>
+
+            <button class="add">Add To Cart</button>
+        </div>
+
+        <div class="bar"></div>
+        <div class="bottom">
+            <!--Implement a bottom part of webpage later-->
+            <div class="bottomBar"></div>
+        </div>
+        
+    </body>
+</html>
