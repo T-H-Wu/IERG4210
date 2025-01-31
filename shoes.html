@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&display=swap" rel="stylesheet">
+        <title>Dummy Shopping Site</title>
+    </head>
+    <body>
+        <div class="menuBar">
+            <div class = topBar>
+            </div>
+            <ul class = "headerBox">
+                <li><a href="home.html"><b>Home</b></a></li>
+                
+                <!---Implement a drop down menu for the categories late when implementing JavaScript or jump to a page full of all categories-->
+                <li><a href="categories.html">Categories</a></li>
+                
+                <li><h1 class = "nameElement">Clothing Shop</h1></li>
+                <li><a href="about.html">About</a></li>
+                <li class = "shoppingList">Shopping List: $109.99
+                    <div class="shoppingListHoverElement">
+                        <div class="shoppingListTextElement">
+                            <h3 class="listTitle">Shopping List:</h3>
+                            <div class="scrollBox" id="checkout">
+                                <ul class="shoppingListList">
+                                    <li>
+                                        Leather Men's Shoes
+                                        <span class="properties">
+                                            quantity: 1<br>price: $49.99
+                                        </span>      
+                                    </li>
+                                    <li>
+                                        Test
+                                        <span class="properties">
+                                            quantity: 1<br>price: $20.00
+                                        </span>      
+                                    </li>
+                                    <li>
+                                        Test
+                                        <span class="properties">
+                                            quantity: 1<br>price: $20.00
+                                        </span>      
+                                    </li>
+                                    <li>
+                                        Test
+                                        <span class="properties">
+                                            quantity: 1<br>price: $20.00
+                                        </span>      
+                                    </li>
+                                    <li>
+                                        Total: $109.99
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="checkout">Checkout</button>
+                        </div>
+                    </div>
+                </li>
+                
+            </ul>
+    
+            <ul class = "categories">
+                <li><a href = "outer.html">Outer Wear</a></li>
+                <li><a href = "inner.html">Inner Wear</a></li>
+                <li><a href = "pants.html">Pants</a></li>
+                <li><a href = "shoes.html" class="current">Shoes</a></li>
+            </ul>
+        </div>
+
+    
+        <ul class = "newArrivals" id = "categoryPage">
+            <li class="leftText">
+                <p class = "topTextElement">Shoes</p>
+                <p class = "botText">,</p>
+                
+                <p class = "description">From the sole.</p>
+            </li>
+
+        </ul>
+    
+        <div class = "productFilter">
+            <div class = "sorting">
+                <div class = "sortCollection">
+                    <label>Filter by:</label>
+                    <select>
+                        <option value="/">All Arrivals</option>
+                    </select>
+                </div>
+                
+                <div class = "sortCollection">
+                    <label>Sort by:</label>
+                    <select>
+                        <option value="/">Featured</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="bar"></div>
+
+        <div class="cardHolder">
+            <article class = "itemCard">
+                <a href="lmsShoes.html"><img src="img/mens_shoes_1.png" alt="Leather Mens' Shoes"></a>
+                <div class = "productText">
+                    <a href="lmsShoes.html"><h6>Leather Mens' Shoes</h6></a>
+                    <p>$49.99 <button class="add">Add</button></p>
+                </div>
+            </article>
+        </div>
+        
+        <div class="bottom">
+            <!--Implement a bottom part of webpage later-->
+            <div class="bottomBar"></div>
+        </div>
+        
+    </body>
+</html>

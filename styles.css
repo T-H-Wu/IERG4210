@@ -1,0 +1,377 @@
+::-webkit-scrollbar
+{
+	background-color: #303030;
+    width: 10px;
+}
+::-webkit-scrollbar-thumb
+{
+	border-radius: 80px;
+	-webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.266);
+	background-color: #F7F7F2;
+}
+
+body{
+    font-family: "Lexend Giga", serif;
+    background-color: #F7F7F2;
+    margin: 0%;
+}
+
+.menuBar {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+}
+
+.topBar {
+    background-color: #252525;
+    padding: 0.2em;
+}
+
+.headerBox, .categoriesTab{
+    
+    background-color: #303030;;
+    color: white;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 115%;
+}
+
+.headerBox{
+    font-family: "Lexend Giga", serif;;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-size: 80%;
+    color: #F7F7F2;
+    background-color: #303030;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 0%;
+}
+
+.headerBox a {
+    text-decoration: none;
+    color: #F7F7F2;
+    display: block;
+    padding-top: 0.5em;
+}
+
+.headerBox .nameElement {
+    margin: 0;
+    font-size: 175%;
+    font-family: "Lexend Giga", serif;   
+}
+
+.headerBox .shoppingList {
+    padding-top: 1em;
+}
+
+.headerBox li {
+    font-size: 120%;
+    padding: 0.7em;
+}
+
+.shoppingListHoverElement {
+    opacity: 1;
+    background-color: rgba(137, 152, 120, 0.914);
+    position: fixed;
+    top: 0em;
+    right: -40em;
+    width: 30em;
+    height: 20em;
+    transition: 0.5s ease;
+}
+
+.shoppingListHoverElement .shoppingListTextElement {
+    color: #F7F7F2;
+    opacity: 1.0;
+    text-align: center;
+}  
+
+.shoppingList:hover .shoppingListHoverElement {
+    border-radius: 0 0 0 1em;
+    transform: translateX(-40em);
+}    
+
+.scrollBox {
+    width: 30em;
+    height: 13em;
+    background-color: rgba(255, 255, 255, 0.233);
+    opacity: 1;
+    border-radius: 0 0 0 1em;
+    overflow: scroll;
+    overflow-x: hidden;
+    color: #F7F7F2;
+    margin-bottom: 0.5em;
+}
+
+#checkout::-webkit-scrollbar
+{
+	background-color: #c4cfaf;
+    width: 10px;
+}
+#checkout::-webkit-scrollbar-thumb
+{
+	border-radius: 8px;
+	-webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.266);
+	background-color: #899878;
+}
+
+.shoppingListList li {
+    margin-left: -2em;
+    margin-right: auto;
+    font-size: 1.1em;  
+}
+
+.shoppingListList li .properties {
+    text-align: right;
+    font-size: 0.8em;
+    padding-left: 5.5em;
+}
+ 
+.checkout {
+    background-color: #c4cfaf;
+    color: #252525;
+    text-align: center;
+    border: none;
+    border-radius: 1em;
+    font-family: "Lexend Giga", serif;
+    padding: 0.6em 1em 0.6em 1em;
+    box-shadow: 0 0.1em 0.2em 0 rgba(0, 0, 0, 0.51);
+}   
+
+.checkout:hover {
+    box-shadow: 0.1em 0.15em 0.3em 0.1em rgba(0, 0, 0, 0.559);
+}
+
+.categories, li {
+    
+    display: flex;
+    margin: 0%;
+    padding: 0%;
+}
+
+.categories{
+    background-color: #899878;
+    justify-content: space-around;
+}
+
+.categories li a{
+    font-variant-caps:petite-caps;
+    display: block;
+    color: #F7F7F2;
+    font-size: 120%;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    text-decoration: none;
+}
+
+.categories li a:hover{
+    background-color: #303030;
+}
+
+.newArrivals {
+    margin: 0;
+    padding-right: 0em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.newArrivals .leftText{
+    padding-top: 12em;
+    padding-left: 6.5%;
+}
+
+.newArrivals .topTextElement {
+    display: contents;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-size: 6em;
+    padding-right: 1em;
+    
+}
+
+.newArrivals .botText{
+    display: contents;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 5em;
+    color:#899878;
+}
+
+.newArrivals .description {
+    display: contents;
+}
+
+.newArrivals .rightElement {
+    margin-top: 0;
+}
+
+.newArrivals .rightElement img {
+    padding-top: 5em;
+    max-width: 20em;
+    height: auto;
+    border: 2em #c4cfaf;
+    border-right-style: solid ;
+}
+
+.productFilter {
+    display: flex;
+    background-color: #899878;
+    padding-top: 0.4em;
+    padding-bottom: 0.6em;
+    justify-content:end;
+}
+
+.sorting {
+    display: flex;
+    color: #F7F7F2;
+}
+
+.sorting select {
+    font-family: "Lexend Giga", serif;
+    text-align: center;
+    color: #899878;
+    border-radius: 0.5em;
+}
+
+.sortCollection {
+    padding-right: 2em;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.bar {
+    background-color: #c4cfaf;
+    padding: 0.2em;
+}
+
+.cardHolder {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    background-color: #F7F7F2;
+}
+
+.itemCard {
+    flex: 0 0 200px;
+    margin: 10px;
+    border: 2.5px solid #899878;
+    border-radius: 0.7em;
+    background-color: #F7F7F2;
+    box-shadow: 2px 2px 6px 0px rgba(2, 2, 2, 0.3);
+}
+
+.itemCard img {
+    max-width: 100%;
+}
+
+.itemCard .productText {
+    padding: 0 1em 0.1em;
+    color: #252525;
+}
+
+.itemCard a {
+    text-decoration: none;
+    color: #252525;
+}
+
+.itemCard .add {
+
+    background-color: #899878;
+    color: #F7F7F2;
+    text-align: center;
+    border: none;
+    border-radius: 1em;
+    font-family: "Lexend Giga", serif;
+    padding: 0.6em 1em 0.6em 1em;
+    box-shadow: 0 0.1em 0.2em 0 rgba(0, 0, 0, 0.51);
+    margin-left: 2.4em;
+}
+
+.itemCard .add:hover {
+    box-shadow: 0.1em 0.15em 0.3em 0.1em rgba(0, 0, 0, 0.559);
+}
+
+.productFull {
+    padding-top: 10em;
+    width: 27em;
+    height: auto;
+}
+
+.productFull img {
+    width: 150%;
+    height: auto;
+}
+
+#productPage h3 {
+    color: #303030;
+    padding-left: 0.6em;
+    
+}
+
+#productPage .add {
+    font-family: "Lexend Giga", serif;
+    height: 2.5em;
+    width: 9em;
+
+    background-color: #899878;
+    color: #F7F7F2;
+    text-align: center;
+    border: none;
+    border-radius: 1em;
+    box-shadow: 0 0.1em 0.2em 0 rgba(0, 0, 0, 0.51);
+    margin-left: 1em;
+    
+    margin-bottom: 1em;
+}
+
+#productPage .add:hover {
+    box-shadow: 0.1em 0.15em 0.3em 0.1em rgba(0, 0, 0, 0.559);
+}
+
+#product {
+    margin-left: 0.7em;
+    width: 32em;
+    height: 13em;
+    background-color: rgba(0, 0, 0, 0.233);
+    opacity: 1;
+    border-radius: 1em 0 0 1em;
+    overflow: scroll;
+    overflow-x: hidden;
+    color: #F7F7F2;
+    margin-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 0.5em;
+}
+
+#product::-webkit-scrollbar
+{
+	background-color: #c4cfaf;
+    width: 10px;
+}
+#product::-webkit-scrollbar-thumb
+{
+	border-radius: 8px;
+	-webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.266);
+	background-color: #899878;
+}
+
+.bottomBar {
+    background-color: #252525;
+    padding: 0.2em;
+}
+
+.current
+{
+    background-color: #303030;
+    font-weight: bold;
+}
+
+#categoryPage {
+    padding: 0 0 5em 4em;
+}
+
